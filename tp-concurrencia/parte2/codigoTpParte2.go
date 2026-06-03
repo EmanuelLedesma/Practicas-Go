@@ -19,6 +19,7 @@ func main() {
 		go worker(i, resultados, &wg)
 	}
 
+	// Solución del problema
 	go func() {
 		wg.Wait()
 		close(resultados)
